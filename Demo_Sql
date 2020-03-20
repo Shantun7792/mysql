@@ -1,0 +1,3 @@
+//Update table with it self replced data , As cretaed short url must be updated using it's name
+UPDATE `tablename` SET `fieldname` = ( SELECT REPLACE(`fieldname`,' ','-') FROM `tablename` WHERE `id` = 'noumber') WHERE `Id`= (SELECT `Id` FROM `tablename`);
+
